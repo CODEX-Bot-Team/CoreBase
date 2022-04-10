@@ -1,2 +1,2 @@
-# DuaBase
- Database package for Typewriter
+# CoreBase
+A simple SQLite3 wrapper made for typewriter
