@@ -1,14 +1,11 @@
 -- See https://github.com/Dot-lua/TypeWriter/wiki/package.info.lua-format for more info
 
-return {
+return { InfoVersion = 1, -- Dont touch this
 
-    InfoVersion = 1,
-
-    ID = "duabase",
+    ID = "CoreBase", -- A unique id 
+    Name = "CoreBase",
+    Description = "",
     Version = "1.0.0",
-
-    Name = "duabase",
-    Description = "A Dua template",
 
     Author = {
         Developers = {
@@ -19,21 +16,21 @@ return {
 
     Dependencies = {
         Luvit = {
-            "creationix/coro-fs",
-            "luvit/path",
-            "luvit/json"
+            "SinisterRectus/sqlite3"
         },
+        Git = {},
         Dua = {}
     },
 
     Contact = {
-        Website = "https://codex-bot.ga", -- Homepage
-        Source = "", -- Github repro
+        Website = "",
+        Source = "",
         Socials = {}
     },
 
     Entrypoints = {
-        Main = "ga.codex.Duabase.Test"
+        Main = "ga.CoreByte.CoreBase.Test"
+        -- CubyPackage = "some.other.entry.caused.by.another.package", -- a package can call another packages entrypoints
     }
 
 }
